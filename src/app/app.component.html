@@ -1,11 +1,11 @@
 <h1 class="text-center">Sanitization of code</h1>
 
-<p>{{injectedText}}</p>
+<p class="text-center my-4">{{injectedText}}</p>
 
-<p [innerHTML]="injectedText"></p>
+<p class="text-center" [innerHTML]="injectedText"></p>
 
-<p><a href="{{hrefCode}}">Without Sanitization</a></p>
+<p class="text-center"><a href="{{hrefCode}}">Without Sanitization</a></p>
 
-<p><a [href]="hrefCode">Sanitization</a></p>
+<p class="text-center"><a [href]="hrefCode">Sanitization</a></p>
 
-<p><a [href]="sanitizerTrust">Sanitization Trusted</a></p>
+<p class="text-center"><a [href]="sanitizerTrust">Sanitization Trusted</a></p>

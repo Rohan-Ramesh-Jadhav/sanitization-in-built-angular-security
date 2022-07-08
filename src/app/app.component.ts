@@ -14,7 +14,7 @@ export class AppComponent {
   sanitizerTrust:SafeUrl='';
   constructor(private sanitizer:DomSanitizer){
     this.hrefCode = 'javascript:alert("Hi there")';
-    this.sanitizerTrust = sanitizer.bypassSecurityTrustUrl(this.injectedText)
+    this.sanitizerTrust = sanitizer.bypassSecurityTrustUrl(this.hrefCode)
   }
   
 }
